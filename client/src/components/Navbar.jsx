@@ -4,7 +4,6 @@ const Navbar = () => {
   return (
     <nav class="flex items-center justify-between p-4 text-white bg-orange-500">
       <div class="flex items-center">
-        <img src="logo.svg" alt="Logo" class="h-8 w-8" />
         <h1 class="ml-2 font-medium">String Haven</h1>
       </div>
       <div class="flex">
