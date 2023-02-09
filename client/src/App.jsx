@@ -1,9 +1,18 @@
 import React from "react";
-import { BrowserHistory, Link, Route, Routes } from "@remix-run/router";
 import { Home, SelectItem } from "./pages";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <BrowserRouter>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/item" element={<SelectItem />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
+  );
 };
 
 export default App;
