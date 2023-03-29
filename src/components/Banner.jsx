@@ -1,7 +1,13 @@
 import React from "react";
 
+import Image from "../assets/guitar.jpeg";
+
 const Banner = () => {
-  return <div>Banner</div>;
+  return (
+    <div>
+      <img src={Image} alt="" />
+    </div>
+  );
 };
 
 export default Banner;
