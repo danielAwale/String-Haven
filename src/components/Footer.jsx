@@ -4,21 +4,21 @@ import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0 py-6 px-3">
-      <div>
+    <div className="absolute bottom-0 py-6 px-3 w-full bg-slate-400">
+      <div className="w-full flex flex-col justify-center items-center lg:flex-row lg:justify-between">
         <p>@2023 String Haven Inc. All Rights Reserved </p>
-      </div>
-      <div>
-        <p>Follow our socials</p>
-        <div>
-          <div>
-            <BsInstagram />
-          </div>
-          <div>
-            <BsFacebook />
-          </div>
-          <div>
-            <BsTwitter />
+        <div className="text-[15px]">
+          <p className="mb-2">Follow our socials</p>
+          <div className="flex justify-between text-[20px]">
+            <div>
+              <BsInstagram />
+            </div>
+            <div>
+              <BsFacebook />
+            </div>
+            <div>
+              <BsTwitter />
+            </div>
           </div>
         </div>
       </div>
