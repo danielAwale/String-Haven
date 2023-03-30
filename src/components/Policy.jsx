@@ -9,7 +9,7 @@ const Policy = () => {
     <div className="bg-slate-400 w-full flex justify-between px-2 py-2">
       <div>
         <FaShippingFast />
-        <p>Free Shipping</p>
+        <p> Free Shipping</p>
       </div>
       <div>
         <ImPriceTags />
