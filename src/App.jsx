@@ -5,7 +5,7 @@ import Policy from "./components/Policy";
 
 const App = () => {
   return (
-    <div className="h-[1000px]">
+    <div>
       <Header />
       <Banner />
       <div className=" mt-4">
