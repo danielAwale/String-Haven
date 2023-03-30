@@ -16,7 +16,9 @@ const App = () => {
       <div className="flex justify-center w-full items-center mt-6">
         <p className="text-xl font-bold">Shop Our Latest Collection</p>
       </div>
-      <Carousel />
+      <div>
+        <Carousel />
+      </div>
     </div>
   );
 };

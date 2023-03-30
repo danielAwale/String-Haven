@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Img1 from "../assets/guitar2.jpeg";
+import Img2 from "../assets/guitar3.jpeg";
+import Img3 from "../assets/guitar4.jpeg";
+
 const Carousel = () => {
   const settings = {
     dots: true,
@@ -16,22 +20,22 @@ const Carousel = () => {
     <Slider {...settings}>
       <div>
         <img
-          className="w-full h-auto object-cover"
-          src="https://via.placeholder.com/800x400/000000/FFFFFF/?text=First+Slide"
+          className="w-full h-[700px] object-contain"
+          src={Img1}
           alt="First slide"
         />
       </div>
       <div>
         <img
-          className="w-full h-auto object-cover"
-          src="https://via.placeholder.com/800x400/FF0000/FFFFFF/?text=Second+Slide"
+          className="w-full h-[700px] object-contain"
+          src={Img2}
           alt="Second slide"
         />
       </div>
       <div>
         <img
-          className="w-full h-auto object-cover"
-          src="https://via.placeholder.com/800x400/0000FF/FFFFFF/?text=Third+Slide"
+          className="w-full h-[700px] object-contain"
+          src={Img3}
           alt="Third slide"
         />
       </div>
