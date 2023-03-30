@@ -4,7 +4,7 @@ import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0 py-6 px-3 w-full bg-slate-400">
+    <div className="fixed bottom-0 mt-0 py-4 px-3 w-full bg-slate-400">
       <div className="w-full flex flex-col justify-center items-center lg:flex-row lg:justify-between">
         <p>@2023 String Haven Inc. All Rights Reserved </p>
         <div className="text-[15px]">

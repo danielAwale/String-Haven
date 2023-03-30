@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="h-[2000px]">
       <Header />
       <Banner />
       <div className=" mt-4">
