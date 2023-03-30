@@ -7,6 +7,9 @@ const App = () => {
     <div>
       <Header />
       <Banner />
+      <div className="flex justify-center w-full items-center mt-6">
+        <p className="text-xl font-bold">Shop Our Latest Collection</p>
+      </div>
     </div>
   );
 };
