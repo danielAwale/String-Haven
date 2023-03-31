@@ -9,26 +9,26 @@ import Img3 from '../assets/guitar4.jpeg'
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    breakpoint: { max: 4000, min: 1024 },
+    items: 4
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 1024, min: 820 },
     items: 3
   },
   tablet: {
-    breakpoint: { max: 1024, min: 350 },
-    items: 1
+    breakpoint: { max: 820, min: 300 },
+    items: 2
   },
   mobile: {
-    breakpoint: { max: 350, min: 0 }, 
+    breakpoint: { max: 414, min: 0 }, 
     items: 1
   }
 };
 
 const Slider = () => {
   return (
-    <div className='container w-full'>
+    <div className='container w-full max-w-full'>
       <Carousel responsive={responsive}>
       <div className='flex justify-center'>
         <img src={Img} alt="" className='h-[800px] object-contain'/>
