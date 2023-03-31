@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Guitar from './Guitar';
 
 import Img from '../assets/guitar2.jpeg'
 import Img2 from '../assets/guitar3.jpeg'
@@ -30,24 +31,16 @@ const Slider = () => {
   return (
     <div className='container w-full max-w-full'>
       <Carousel responsive={responsive}>
-      <div className='flex justify-center'>
-        <img src={Img} alt="" className='h-[800px] object-contain'/>
-      </div>
-      <div className='flex justify-center'>
-      <img src={Img2} alt="" className='h-[800px] object-contain' />
-      </div>
-      <div className='flex justify-center'>
-      <img src={Img3} alt="" className='h-[800px] object-contain' />
-      </div>
-      <div className='flex justify-center'>
-      <img src={Img} alt="" className='h-[800px] object-contain'/>
-      </div>
-      <div className='flex justify-center'>
-      <img src={Img} alt="" className='h-[800px] object-contain'/>
-      </div>
-      <div className='flex justify-center'>
-      <img src={Img} alt="" className='h-[800px] object-contain'/>
-      </div>
+      <Guitar image={Img} />
+      <Guitar image={Img2} />
+      <Guitar image={Img3} />
+      <Guitar image={Img3} />
+      <Guitar image={Img2} />
+      <Guitar image={Img} />
+      <Guitar image={Img2} />
+      <Guitar image={Img3} />
+      <Guitar image={Img} />
+      <Guitar image={Img2} />
       </Carousel>;
     </div>
   )
