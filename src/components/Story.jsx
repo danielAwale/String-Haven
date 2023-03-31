@@ -1,9 +1,15 @@
 import React from "react";
+import Image from "../assets/story.jpg";
 
 const Story = () => {
   return (
-    <div className="bg-slate-500 py-20 px-4 mt-20">
-      <img src="" alt="" />
+    <div className="mt-20 w-full relative">
+      <img
+        src={Image}
+        alt=""
+        className="lg:h-[500px] lg:w-full lg:object-cover"
+      />
+      <p>Learn About us</p>
     </div>
   );
 };
