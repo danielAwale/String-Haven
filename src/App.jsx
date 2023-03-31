@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Policy from "./components/Policy";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Carousel from "./components/Slider";
 import Story from "./components/Story";
 
@@ -18,7 +18,13 @@ const App = () => {
         <p className="text-xl font-bold">Shop Our Latest Collection</p>
       </div>
       <Carousel />
-      <Story />
+      <div className="h-[800px]">
+        <Story />
+      </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

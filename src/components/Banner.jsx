@@ -10,7 +10,9 @@ const Banner = () => {
         <p className="text-white text-[25px] lg:text-[50px] font-semibold italic">
           Shop the world's finest guitars
         </p>
-        <p className="text-white text-[45px] lg:text-[80px]">Made with 100% Koa</p>
+        <p className="text-white text-[45px] lg:text-[80px]">
+          Made with 100% Koa
+        </p>
         <button className=" bg-orange-500 px-2 py-2 rounded-md lg:px-4 lg:py-4">
           Shop now
         </button>
