@@ -28,7 +28,7 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <div className='container w-full lg:ml-80'>
+    <div className='container w-full'>
       <Carousel responsive={responsive}>
       <div className='flex justify-center'>
         <img src={Img} alt="" className='h-[800px] object-contain'/>
@@ -38,6 +38,12 @@ const Slider = () => {
       </div>
       <div className='flex justify-center'>
       <img src={Img3} alt="" className='h-[800px] object-contain' />
+      </div>
+      <div className='flex justify-center'>
+      <img src={Img} alt="" className='h-[800px] object-contain'/>
+      </div>
+      <div className='flex justify-center'>
+      <img src={Img} alt="" className='h-[800px] object-contain'/>
       </div>
       <div className='flex justify-center'>
       <img src={Img} alt="" className='h-[800px] object-contain'/>
