@@ -13,7 +13,7 @@ const Policy = () => {
       </div>
       <div className="flex justify-center items-center gap-2">
         <ImPriceTags />
-        <p>Best Price for the quality</p>
+        <p>Best Price guaranteed</p>
       </div>
       <div className="flex justify-center items-center gap-2">
         <TbTruckReturn />
