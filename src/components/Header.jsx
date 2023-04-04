@@ -1,5 +1,7 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
+import Acoustic from "../pages/Acoustic";
 
 const Header = () => {
   return (
@@ -9,7 +11,9 @@ const Header = () => {
       </div>
       <div className="text-[22px] cursor-pointer flex justify-around items-center w-full">
         {/* <GiHamburgerMenu /> */}
-        <p>Acoustic</p>
+        <Link to={<Acoustic />}>
+          <p>Acoustic</p>
+        </Link>
         <p>Electric</p>
         <p>Bass</p>
         <p>Ukulele</p>
