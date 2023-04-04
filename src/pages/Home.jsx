@@ -9,7 +9,6 @@ import Story from "../components/Story";
 const Home = () => {
   return (
     <>
-      <Header />
       <Banner />
       <div className=" mt-4">
         <Policy />
