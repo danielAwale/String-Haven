@@ -7,16 +7,24 @@ const Header = () => {
   return (
     <div className="flex justify-around py-4 px-4 items-center max-w-full container">
       <div className="font-thin italic text-[30px] cursor-pointer w-full">
-        <span className="font-bold">String</span> Haven
+        <Link to="/">
+          <span className="font-bold">String</span> Haven
+        </Link>
       </div>
       <div className="text-[22px] cursor-pointer flex justify-around items-center w-full">
         {/* <GiHamburgerMenu /> */}
-        <Link to={<Acoustic />}>
+        <Link to="/acoustic">
           <p>Acoustic</p>
         </Link>
-        <p>Electric</p>
-        <p>Bass</p>
-        <p>Ukulele</p>
+        <Link to="/electric">
+          <p>Electric</p>
+        </Link>
+        <Link to="/bass">
+          <p>Bass</p>
+        </Link>
+        <Link to="/ukulele">
+          <p>Ukulele</p>
+        </Link>
       </div>
     </div>
   );
