@@ -6,8 +6,10 @@ const Story = () => {
     <div className="mt-20 w-full relative">
       <div className="w-full h-full bg-black opacity-50 absolute"></div>
       <div className="absolute flex items-center w-full h-full justify-center flex-col">
-        <p className="text-white text-[50px] italic mb-4">Learn About us</p>
-        <p className="text-white text-[17px] italic font-semibold container mt-4">
+        <p className="text-white text-[25px] lg:text-[50px]  italic mb-4">
+          Learn About us
+        </p>
+        <p className="text-white text-[10px] lg:text-[20px] italic font-semibold container mt-4 px-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
           illo quas culpa deleniti laborum eligendi suscipit delectus, ullam
           voluptates quo exercitationem at. Eligendi veniam dolores animi
