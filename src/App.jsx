@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Acoustic from "./pages/Acoustic";
 import Electric from "./pages/Electric";
-import Bass from "./pages/Bass";
-import Ukulele from "./pages/Ukulele";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -22,10 +22,10 @@ const App = () => {
         <Route path="/electric" element={<Electric />} />
       </Routes>
       <Routes>
-        <Route path="/bass" element={<Bass />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Routes>
-        <Route path="/ukulele" element={<Ukulele />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

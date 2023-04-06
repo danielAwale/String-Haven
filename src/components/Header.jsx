@@ -19,11 +19,11 @@ const Header = () => {
         <Link to="/electric">
           <p>Electric</p>
         </Link>
-        <Link to="/bass">
-          <p>Bass</p>
+        <Link to="/about">
+          <p>About</p>
         </Link>
-        <Link to="/ukulele">
-          <p>Ukulele</p>
+        <Link to="/contact">
+          <p>Contact</p>
         </Link>
       </div>
     </div>
