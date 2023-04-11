@@ -13,7 +13,7 @@ const Acoustic = () => {
     try {
       const data = await getDocs(guitarCollectionRef);
       data.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
+        setGuitar(doc.data());
       });
     } catch (error) {
       console.error(error);
