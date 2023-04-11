@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { db } from "../config/firebase";
 
 import Img from "../assets/guitar2.jpeg";
@@ -12,8 +12,17 @@ const Acoustic = () => {
   const getGuitar = async () => {
     try {
       const data = await getDocs(guitarCollectionRef);
-    } catch (error) {}
+      data.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data());
+      });
+    } catch (error) {
+      console.error(error);
+    }
   };
+
+  useEffect(() => {
+    getGuitar();
+  }, []);
 
   return (
     <section className="container m-auto grid">
