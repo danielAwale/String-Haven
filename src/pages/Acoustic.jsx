@@ -9,19 +9,22 @@ const Acoustic = () => {
 
   const guitarCollectionRef = collection(db, "acoustic");
 
-  const getGuitar = async () => {
+  const getGuitarList = async () => {
     try {
       const data = await getDocs(guitarCollectionRef);
-      data.forEach((doc) => {
-        setGuitar(doc.data());
-      });
+      const filteredData = data.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+      console.log(filteredData);
+      setGuitar(filteredData);
     } catch (error) {
       console.error(error);
     }
   };
 
   useEffect(() => {
-    getGuitar();
+    getGuitarList();
   }, []);
 
   return (
@@ -30,10 +33,12 @@ const Acoustic = () => {
         <div className="flex">
           <img src={Img} alt="" className="h-[600px]" />
         </div>
-        <div className="flex flex-col items-center">
-          <p>StringMaster</p>
-          <p>2053</p>
-        </div>
+        {guitar?.map((elem) => (
+          <div className="flex flex-col items-center">
+            <p>{elem.model}</p>
+            <p>{elem.price}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
