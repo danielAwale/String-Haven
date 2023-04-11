@@ -4,8 +4,8 @@ import Img from "../assets/guitar2.jpeg";
 
 const Acoustic = () => {
   return (
-    <section className="flex">
-      <div>
+    <section className="container px-4 py-4">
+      <div className="flex flex-col justify-between items-center">
         <div>
           <img src={Img} alt="" className="h-[800px]" />
         </div>
