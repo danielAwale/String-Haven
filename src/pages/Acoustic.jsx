@@ -48,7 +48,11 @@ const Acoustic = () => {
         {guitar?.map((elem) => (
           <>
             <div className="flex">
-              <img src={elem.imageUrl} alt="" className="h-[600px]" />
+              <img
+                src={elem.imageUrl}
+                alt=""
+                className="h-[200px] w-[900px] object-contain"
+              />
             </div>
             <div className="flex flex-col items-center">
               <p>{elem.model}</p>
