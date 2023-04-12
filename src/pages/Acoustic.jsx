@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../config/firebase";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 import Img from "../assets/acoustic/gibson1.webp";
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, doc, updateDoc } from "firebase/firestore";
 
 const Acoustic = () => {
   const [guitar, setGuitar] = useState([]);
