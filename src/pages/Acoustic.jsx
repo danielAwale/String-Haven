@@ -9,7 +9,7 @@ import { getDocs, collection, doc, updateDoc } from "firebase/firestore";
 const storage = getStorage();
 
 //Create a reference to the image file in Firebase Storage
-const imageRef = ref(storage, "guitars-acoustic/");
+const imageRef = ref(storage, "guitars-acoustic/denver1.webp");
 
 const Acoustic = () => {
   const [guitar, setGuitar] = useState([]);
@@ -27,12 +27,11 @@ const Acoustic = () => {
       console.log(filteredData);
       setGuitar(filteredData);
 
-      // Loop through the filteredData array and update each guitar document with the image URL
+      // Get the image URL once and update each guitar document
+      const url = await getDownloadURL(imageRef);
       filteredData.forEach((guitar) => {
-        getDownloadURL(ref(storage, guitar.imageUrl)).then((url) => {
-          const productRef = doc(db, "acoustic", guitar.id);
-          updateDoc(productRef, { imageUrl: url });
-        });
+        const productRef = doc(db, "acoustic", guitar.id);
+        updateDoc(productRef, { imageUrl: url });
       });
     } catch (error) {
       console.error(error);
