@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../config/firebase";
 
-import Img from "../assets/guitar2.jpeg";
+import Img from "../assets/acoustic/gibson1.webp";
 import { getDocs, collection } from "firebase/firestore";
 
 const Acoustic = () => {
